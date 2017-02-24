@@ -1,0 +1,6 @@
+<h1> Test your Website</h1>
+<%= form_tag("/test-websites", method: "post") do %>
+<%= label_tag(:url, "Test Website") %>
+<%= text_field_tag(:url) %>
+<%= submit_tag("Test Now") %>
+<% end %>
